@@ -1,0 +1,59 @@
+﻿@model Interesse
+@{
+    ViewData["Title"] = "Hotsite";
+}
+
+<div class="row my-2">
+    <div class="col-12 col-md-12 col-lg-6">
+        <h1>Iniciativa Saúde da Cidade</h1>
+        <p>
+            Texto sobre vida saudável: Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos
+            at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit.
+        </p>
+        <p>
+            Texto sobre vida iniciativa: Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos
+            at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit.
+        </p>
+    </div>
+
+    <div class="col-12 col-md-12 col-lg-6">
+        <img src="/images/pexels-ella-olsson-1640777.jpg" alt="" class="img-fluid">
+    </div>
+
+</div>
+
+<div class="row my-2">
+    <div class="col-12 col-md-12 col-lg-6">
+
+        <h2>Entre em contato!</h2>
+        <p>Nos mande uma mensagem e fique por dentro de nossos eventos</p>
+
+        <form action="/Home/Cadastrar" method="POST" class="">
+            <div class="form-group row">
+                <label asp-for="Nome" class="col-sm-2 col-form-label">Nome:</label>
+                <div class="col-sm-10">
+                    <input asp-for="Nome" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group row">
+                <label asp-for="Email" class="col-sm-2 col-form-label">Email:</label>
+                <div class="col-sm-10">
+                    <input asp-for="Email" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Mensagem">Mensagem (opcional):</label>
+                <textarea asp-for="Mensagem" class="form-control"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Enviar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+
+    <div class="col-12 col-md-12 col-lg-6">
+        <a href="#">Agenda de eventos</a>
+        <a href="#">Dicas de vida saudável</a>
+        <a href="#">Apoiadores</a>
+    </div>
+</div>
