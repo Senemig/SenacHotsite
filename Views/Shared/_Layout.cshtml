@@ -9,18 +9,18 @@
     <title>@ViewData["Title"] - Hotsite</title>
 </head>
 
-<body>
+<body class="custom-bg">
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
-
-    <footer class="border-top footer text-muted">
+    @*
+        <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2020 - Hotsite
+        &copy; 2020 - Hotsite
         </div>
-    </footer>
+        </footer> *@
 
     @RenderSection("Scripts", required: false)
 </body>
