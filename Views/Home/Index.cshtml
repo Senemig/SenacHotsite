@@ -57,26 +57,28 @@
                 <figure class="figure">
                     <img src="/images/agenda.jpg" alt="Imagem de agenda" class="img-fluid">
                     <button type="button" class="btn btn-success mt-2" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">
+                        data-bs-target="#modalAgenda">
                         Agenda
                     </button>
                 </figure>
             </div>
             <div class="col-12 col-lg-4 text-center">
-                <a href="#">
-                    <figure class="figure">
-                        <img src="/images/apoio.jpg" alt="Imagem de patrocinadores" class="img-fluid">
-                        <figcaption class="figure-caption text-center">Apoiadores</figcaption>
-                    </figure>
-                </a>
+                <figure class="figure">
+                    <img src="/images/apoio.jpg" alt="Imagem de patrocinadores" class="img-fluid">
+                    <button type="button" class="btn btn-success mt-2" data-bs-toggle="modal"
+                        data-bs-target="#modalApoiadores">
+                        Apoiadores
+                    </button>
+                </figure>
             </div>
             <div class="col-12 col-lg-4 text-center">
-                <a href="#">
-                    <figure class="figure">
-                        <img src="/images/dicas.jpg" alt="Imagem de receita sendo preparada" class="img-fluid">
-                        <figcaption class="figure-caption text-center">Dicas de vida saudável</figcaption>
-                    </figure>
-                </a>
+                <figure class="figure">
+                    <img src="/images/dicas.jpg" alt="Imagem de receita sendo preparada" class="img-fluid">
+                    <button type="button" class="btn btn-success mt-2" data-bs-toggle="modal"
+                        data-bs-target="#modalDicas">
+                        Dicas de vida saudável
+                    </button>
+                </figure>
             </div>
 
         </div>
@@ -84,7 +86,9 @@
     </div>
 </div>
 
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+@* **************************** Modal Agenda **************************** *@
+
+<div class="modal fade" id="modalAgenda" tabindex="-1" aria-labelledby="modalAgendaLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header justify-content-center">
@@ -116,6 +120,95 @@
                     necessitatibus cumque perferendis, tempora aperiam autem accusamus harum laborum. Tempora commodi
                     placeat odit magnam odio.</p>
 
+            </div>
+        </div>
+    </div>
+</div>
+
+@* **************************** Modal Apoiadores **************************** *@
+<div class="modal fade" id="modalApoiadores" tabindex="-1" aria-labelledby="modalApoiadoresLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header justify-content-center">
+                <h2 class="modal-title" id="exampleModalLabel">Apoiadores</h2>
+            </div>
+            <div class="modal-body">
+                <div class="card mb-3 pl-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4 m-auto">
+                            <img src="/images/Empresa1.jpg" class="img-fluid rounded-start" alt="Logo da Empresa 1">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Empresa 1</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
+                                    consectetur. Eos laudantium maiores ipsam eaque.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 pl-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4 m-auto">
+                            <img src="/images/Empresa1.jpg" class="img-fluid rounded-start" alt="Logo da Empresa 1">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Empresa 2</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
+                                    consectetur. Eos laudantium maiores ipsam eaque.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 pl-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4 m-auto">
+                            <img src="/images/Empresa1.jpg" class="img-fluid rounded-start" alt="Logo da Empresa 1">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Empresa 3</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
+                                    consectetur. Eos laudantium maiores ipsam eaque.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* **************************** Modal Agenda **************************** *@
+
+<div class="modal fade" id="modalDicas" tabindex="-1" aria-labelledby="modalDicasLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header justify-content-center">
+                <h2 class="modal-title" id="exampleModalLabel">Dicas de vida saudável</h2>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore libero cupiditate minima dignissimos
+                    illum consequuntur labore, odio autem maiores assumenda soluta, itaque quae ab cumque explicabo
+                    illo. Impedit laboriosam facilis, sint soluta vel suscipit possimus sed sequi asperiores saepe ipsam
+                    expedita consequatur voluptatibus nisi, qui consectetur quisquam libero, quas quibusdam?</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere quibusdam ipsum qui blanditiis
+                    voluptatibus vero non vel laboriosam placeat, quaerat ad totam ea mollitia minima accusantium dicta
+                    numquam in quidem architecto sunt dolor maxime. Amet, eaque, voluptas suscipit neque perferendis
+                    dolorum quam doloremque cumque rem harum cum dolore assumenda molestias debitis dicta odio quaerat
+                    repellat nobis. Reprehenderit est deserunt cupiditate.</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus dicta illo officiis fugit
+                    tenetur dolores repudiandae quis odit perferendis similique magni ipsum, nulla repellat, distinctio
+                    corrupti porro, deleniti consequatur perspiciatis culpa nihil eius sed a consequuntur ratione.
+                    Eligendi totam, repellendus iure, suscipit, repudiandae cupiditate odit corporis provident inventore
+                    similique eos repellat enim rem necessitatibus officia corrupti obcaecati? Corporis eius itaque
+                    aliquam voluptatum dolorum dolores consectetur, necessitatibus quo delectus? Eaque nam, doloremque
+                    nisi nostrum adipisci modi velit, fuga accusamus quasi, nobis asperiores sunt aliquam dolores
+                    explicabo possimus itaque. Fugiat dolores vel eos? Perferendis harum quo iusto aliquam sapiente.
+                    Beatae, quibusdam commodi.</p>
             </div>
         </div>
     </div>
