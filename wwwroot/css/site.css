@@ -13,9 +13,12 @@ p {
   font-size: 1.2rem;
 }
 
+.text-green {
+  color: #08af10;
+}
+
 .figure-caption {
   font-size: 1.2rem;
-  color: #08af10;
 }
 
 .figure-caption:hover {

@@ -19,6 +19,12 @@ namespace Hotsite.Controllers
             _logger = logger;
         }
 
+        public IActionResult Erro(string erro)
+        {
+            ViewData["Erro"] = erro;
+            return View();
+        }
+
         public IActionResult Index()
         {
             return View();
@@ -35,10 +41,12 @@ namespace Hotsite.Controllers
             catch (MySqlException m)
             {
                 _logger.LogError("Erro do MySQL: " + m.Message);
+                return RedirectToAction("Erro", "Home", m.Message);
             }
             catch (Exception e)
             {
                 _logger.LogError("Erro ao cadastrar o item: " + e.Message);
+                return RedirectToAction("Erro", "Home", e.Message);
             }
             return View("Index", cad);
         }

@@ -56,3 +56,4 @@ C:\Users\ferna\Desktop\SENAC\Módulo 2\UC06\projetohotsite\obj\Debug\netcoreapp3
 C:\Users\ferna\Desktop\SENAC\Módulo 2\UC06\projetohotsite\obj\Debug\netcoreapp3.1\Hotsite.dll
 C:\Users\ferna\Desktop\SENAC\Módulo 2\UC06\projetohotsite\obj\Debug\netcoreapp3.1\Hotsite.pdb
 C:\Users\ferna\Desktop\SENAC\Módulo 2\UC06\projetohotsite\obj\Debug\netcoreapp3.1\Hotsite.genruntimeconfig.cache
+C:\Users\ferna\Desktop\SENAC\Módulo 2\UC06\projetohotsite\obj\Debug\netcoreapp3.1\Razor\Views\Home\Erro.cshtml.g.cs

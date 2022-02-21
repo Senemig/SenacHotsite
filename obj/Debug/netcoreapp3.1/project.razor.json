@@ -14422,6 +14422,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\ferna\\Desktop\\SENAC\\Módulo 2\\UC06\\projetohotsite\\Views\\Home\\Erro.cshtml",
+      "TargetPath": "Views\\Home\\Erro.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\ferna\\Desktop\\SENAC\\Módulo 2\\UC06\\projetohotsite\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
