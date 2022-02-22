@@ -1,6 +1,7 @@
 @{
     ViewData["Title"] = "Erro";
 }
+@model string
 
 <h1 class="text-center mt-3">Algo deu errado!</h1>
 
@@ -10,4 +11,4 @@
 
 <h3 class="text-center">Tente novamente mais tarde.</h3>
 
-<p class="text-center">@ViewData["Erro"]</p>
+<p class="text-center">@Model</p>

@@ -14422,8 +14422,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\ferna\\Desktop\\SENAC\\Módulo 2\\UC06\\projetohotsite\\Views\\Home\\Erro.cshtml",
-      "TargetPath": "Views\\Home\\Erro.cshtml",
+      "FilePath": "c:\\Users\\ferna\\Desktop\\SENAC\\Módulo 2\\UC06\\projetohotsite\\Views\\Shared\\Erro.cshtml",
+      "TargetPath": "Views\\Shared\\Erro.cshtml",
       "FileKind": "mvc"
     },
     {

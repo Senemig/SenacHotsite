@@ -31,11 +31,14 @@ namespace Hotsite
         {
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
+                // app.UseDeveloperExceptionPage();
+                app.UseExceptionHandler("/erro/500");
+                app.UseStatusCodePagesWithReExecute("/erro/{0}");
             }
             else
             {
-                app.UseExceptionHandler("/Home/Erro");
+                app.UseExceptionHandler("/erro/500");
+                app.UseStatusCodePagesWithReExecute("/erro/{0}");
             }
             app.UseStaticFiles();
 

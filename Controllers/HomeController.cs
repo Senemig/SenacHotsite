@@ -19,12 +19,6 @@ namespace Hotsite.Controllers
             _logger = logger;
         }
 
-        public IActionResult Erro(string erro)
-        {
-            ViewData["Erro"] = erro;
-            return View();
-        }
-
         public IActionResult Index()
         {
             return View();
@@ -37,20 +31,21 @@ namespace Hotsite.Controllers
             try
             {
                 dbs.CadastraInteresse(cad);
+                ModelState.Clear();
+                ViewData["Mensagem"] = "Cadastrado com sucesso!";
             }
             catch (MySqlException m)
             {
                 _logger.LogError(m.Message);
-                return RedirectToAction("Erro");
+                return View("Erro", m.Message);
             }
             catch (Exception e)
             {
                 _logger.LogError("Erro ao cadastrar o item: " + e.Message);
-                return RedirectToAction("Erro");
+                return View("Erro", "Erro ao cadastrar o item: " + e.Message);
             }
 
-            ModelState.Clear();
-            ViewData["Mensagem"] = "Cadastrado com sucesso!";
+
             return View("Index");
         }
 
