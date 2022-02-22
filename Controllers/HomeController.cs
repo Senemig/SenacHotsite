@@ -40,15 +40,18 @@ namespace Hotsite.Controllers
             }
             catch (MySqlException m)
             {
-                _logger.LogError("Erro do MySQL: " + m.Message);
-                return RedirectToAction("Erro", "Home", m.Message);
+                _logger.LogError(m.Message);
+                return RedirectToAction("Erro");
             }
             catch (Exception e)
             {
                 _logger.LogError("Erro ao cadastrar o item: " + e.Message);
-                return RedirectToAction("Erro", "Home", e.Message);
+                return RedirectToAction("Erro");
             }
-            return View("Index", cad);
+
+            ModelState.Clear();
+            ViewData["Mensagem"] = "Cadastrado com sucesso!";
+            return View("Index");
         }
 
     }
