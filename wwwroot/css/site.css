@@ -29,6 +29,13 @@ figure:hover {
   text-decoration: underline;
 }
 
+.sucesso {
+  background-color: #08af10;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+
 /* Provide sufficient contrast against white background */
 a {
   color: #0366d6;

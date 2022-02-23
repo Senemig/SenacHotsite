@@ -24,29 +24,51 @@ namespace Hotsite.Controllers
             return View();
         }
 
+        // [HttpPost]
+        // public IActionResult Cadastrar(Interesse cad)
+        // {
+        //     DatabaseService dbs = new DatabaseService();
+        //     try
+        //     {
+        //         dbs.CadastraInteresse(cad);
+        //         ModelState.Clear();
+        //         ViewData["Mensagem"] = "Cadastrado com sucesso!";
+        //     }
+        //     catch (MySqlException m)
+        //     {
+        //         _logger.LogError(m.Message);
+        //         return View("Erro", m.Message);
+        //     }
+        //     catch (Exception e)
+        //     {
+        //         _logger.LogError("Erro ao cadastrar o item: " + e.Message);
+        //         return View("Erro", "Erro ao cadastrar o item: " + e.Message);
+        //     }
+
+
+        //     return View("Index");
+        // }
+
         [HttpPost]
-        public IActionResult Cadastrar(Interesse cad)
+        public string Cadastrar(Interesse cad)
         {
             DatabaseService dbs = new DatabaseService();
             try
             {
                 dbs.CadastraInteresse(cad);
                 ModelState.Clear();
-                ViewData["Mensagem"] = "Cadastrado com sucesso!";
             }
             catch (MySqlException m)
             {
                 _logger.LogError(m.Message);
-                return View("Erro", m.Message);
+                return m.Message;
             }
             catch (Exception e)
             {
                 _logger.LogError("Erro ao cadastrar o item: " + e.Message);
-                return View("Erro", "Erro ao cadastrar o item: " + e.Message);
+                return "Erro ao cadastrar o item: " + e.Message;
             }
-
-
-            return View("Index");
+            return "OK";
         }
 
     }

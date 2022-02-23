@@ -11,4 +11,15 @@
 
 <h3 class="text-center">Tente novamente mais tarde.</h3>
 
-<p class="text-center">@Model</p>
+@if (!string.IsNullOrEmpty(Model))
+{
+    <p class="text-center" id="msgErro">@Model</p>
+}
+else
+{
+    <p class="text-center" id="msgErro"></p>
+}
+
+<div class="text-center">
+    <a href="/Home/Index" class="btn btn-primary">Voltar</a>
+</div>
