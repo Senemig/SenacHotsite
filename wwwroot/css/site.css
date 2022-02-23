@@ -34,6 +34,9 @@ figure:hover {
   color: white;
   font-weight: bolder;
   font-size: 1.3rem;
+  padding: 2rem;
+  text-align: center;
+  cursor: default;
 }
 
 /* Provide sufficient contrast against white background */
